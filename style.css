@@ -1,0 +1,113 @@
+/* Unbounded Font */
+@font-face {
+    font-family: 'Unbounded';
+    src: url('/tecboard/fonts/Unbounded-Bold.ttf') 
+    format('truetype');
+    font: 700 normal swap;
+}
+
+/* Poppins Font */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/tecboard/fonts/Poppins-Bold.ttf') 
+    format('truetype');
+    font: 400 normal swap;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop */
+body{
+    background-color: #0e1014;
+    color: #fff;
+}
+
+h1 span{
+    color: #9747ff;
+    font: bold 80px Unbounded, sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1{
+    font: bold 80px Unbounded, sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
+
+p{
+    font: 24px Poppins, sans-serif;
+    text-align: center;
+    width: 792px;
+    margin: 24px auto;
+}
+
+a{
+    color: #fff;
+    font: 24px 'Poppins', sans-serif;
+    text-decoration: none;
+    background-color: #9747ff;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto 10px;
+}
+
+a:hover{
+    background-color: #8233e8;
+}
+
+/* button{
+    border: none;
+    margin: 100px auto;
+} */
+
+header{
+    margin: 75px 0 60px 360px;
+}
+
+.tablet{
+    display: block;
+    margin: 40px auto;
+}
+
+@media(max-width: 768px){
+    header{
+        margin: 65px 0 0 60px;
+    }
+    p{
+        width: 648px;
+        margin-left: 60px;
+    }
+    h1{
+        margin: 72px 0 0 60px;
+        width: 648px;
+    }
+
+}
+
+@media(max-width: 375px){
+    header{
+        margin: 32px 0 0 16px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h1 span{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+        width: 340px;
+    }
+}
+
